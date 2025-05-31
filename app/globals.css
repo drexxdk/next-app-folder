@@ -19,3 +19,18 @@ button {
     cursor: pointer;
   }
 }
+
+@media screen {
+  html {
+    --thumb-color: var(--color-gray-200);
+    --track-color: var(--color-gray-500);
+
+    scrollbar-width: thin; /* length not currently implemented 13 april 2020 */
+    scrollbar-color: var(--thumb-color) var(--track-color);
+
+    * {
+      scrollbar-width: thin; /* length not currently implemented 15 november 2022 */
+      scrollbar-color: var(--thumb-color) var(--track-color);
+    }
+  }
+}
